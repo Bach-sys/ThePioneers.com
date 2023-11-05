@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,400;0,600;0,800;1,200&family=Ruge+Boogie&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+:root{
+  --white: #F5F5F5;
+  --mainPink:#F875AA;
+  --lightpink:#FFDFDF;
+  --mainwhite:#FFF6F6;
+  --blue:#AEDEFC;
+  --brown: #3F2305;
+  --black: #211E32;
+  --dark: #2A2F42;
+  --green: #5AFE72;
+  --purple: #9A3BBA;
+  --danger: #FE4E56;
+  --yellow: #fbff22;
+}
+.Logo_pioners{
+  width: 100px;
+  
+}
+.navbar-brand{
+  font-weight: 600;
+  font-size: 40px!important;
+  font-family: 'Noto Sans', sans-serif;
+  margin-left: 30px;
+}
+#page_main{
+  background-image:url('assets/teamPioners.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment:scroll ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 50px 50px 25px;
+  width: 100%;
+  height: 100vh;
+  background-color:var(--mainwhite) ;
+  position: relative;
+  isolation: isolate;
+}
+#page_main::after{
+  content :'';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:#F5F5F5;
+  opacity: 0.75;
+}
+.navbar{
+  background-color: var(--mainwhite);
+}
+.img{
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 70px;
+  background-image: linear-gradient(
+          var(--rotate),
+          var(--mainPink)5%, var(--mainwhite)95%);
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  12%{
+    --rotate: 45deg;
+  }
+  25%{
+    --rotate: 90deg;
+  }
+  37%{
+    --rotate: 135deg;
+  }
+  50%{
+    --rotate: 180deg;
+  }
+  75%{
+    --rotate: 270deg;
+  }
+  85%{
+    --rotate: 290deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.LiNav{
+  font-weight:400 ;
+  font-family:'Noto Sans', sans-serif;;
+  font-size: 20px;
+  margin-left: 50px;
+  font-style: italic;
+}
+.navContent{
+  margin-left: 10%!important;
+}
+.title_body{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-family:'Noto Sans', sans-serif;
+}
+#page_main #content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.qoutes{
+  height: 15%;
+  font-size: 120px;
+  font-family: 'Ruge Boogie', cursive;
+}
+.end{
+  align-self:flex-end;
+}
+div.polaroid {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+}
+.rotate_rightanother{
+  float: left ;
+  transform: rotate(5deg);
+}
+.rotate_leftanother{
+  float: left ;
+  transform: rotate(-9deg);
+}
+.realImage{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
